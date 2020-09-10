@@ -13,8 +13,8 @@ body {
 .topbar {
   background-color: #FF5A5F;
   padding: 10px 0;
+  margin-bottom: 10px;
 }
-
 .topbar p {
   color: #fff;
   margin: 0;
@@ -61,7 +61,6 @@ body {
 .search-container {
   display: flex;
 }
-
 .search-container input {
   flex: 1;
   padding: 10px;
@@ -85,6 +84,9 @@ body {
 .ranking-container {
   display: flex;
   overflow-x: auto;
+}
+.ranking-container a {
+  text-decoration: none;
 }
 
 .card-container {
@@ -120,32 +122,31 @@ body {
   border-radius: 10px;
   overflow: hidden;
 }
-
 .card-detail img {
   width: 100%;
 }
-
 .card-detail div {
   padding: 3px 10px;
 }
-
 .card-detail div h2 {
   color: #767676;
   font-weight: 400;
   font-size: 1.3em;
 }
 
-
 .Adventure-container {
   display:flex;
   justify-content: flex-start;
   border: 1px solid #f2f2f2;
   box-shadow: 1px 2px 2px #ccc;
-}
+  padding: 20px 10px;
+  }
 
 .Adventure-image{
  width: 150px;
  height: 150px; 
+ border-radius: 10px;
+ overflow: hidden;
 }
 
 
@@ -185,30 +186,26 @@ font-size: 0.6em;
   margin-left: 12px;
 }
 
-
-.wapper-page {
-  }
-
-
 .navigation-web {
   position: fixed;
   display: none;
   width: 280px;
+  height: 100%;
   background-color: lightblue;
-  
 }
 
-
-.main-page{
+.main-page {
   margin-left: 0px;
-  }
+}
 
 @media (min-width: 768px) {
   .navigation {
-  display: none;
-}
+    display: none;
   }
-
   .navigation-web {
     display: inline;
   }
+  .main-page {
+    margin-left: 280px;
+  }
+}
